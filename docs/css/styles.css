@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap');
+@import url('/css/menu.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+:root{
+
+}
+
+.header{
+    border-bottom: 1px solid #2525256e;
+}
+
+.container{
+    margin: 0px 10px;
+}
+
+@media (min-width: 768px) {
+    .container{
+        margin: 0px 50px;
+    }
+}
+
+@media (min-width: 1024px){
+    .container{
+        margin: 0px 150px;
+    }
+}
+
+@media (min-width: 1440px){
+    .container{
+        margin: 0px 350px;
+    }
+}
+
+.nav{
+    height: 44px;
+    margin: 0px -10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-link{
+    padding: 3px 10px;
+    margin-right: 20px;
+    font-size: .85em;
+    color: #252525;
+    opacity: .70;
+    font-weight: 500;
+    letter-spacing: -.045em;
+}
+
+.nav-link:hover,
+.main-buttom:hover,
+.footer-link:hover{
+    background-color: #dddddd;
+    border-radius: .30em;
+    transition: 0.5s;
+}
+
+.logo{
+    font-size: 1.5em;
+    font-weight: 600;
+    background-image: linear-gradient(
+    91.36deg, #6aa9e498 0%, #7aa4f3b4 13.02%, #6dc7ee 25.52%, #6dc7ee 37.5%, #caeaf8 49.48%, #77c8eb 63.02%, #7aa4f3b4 72.92%, #90b2f3b4 84.38%, #90b2f3b4 97.92%);
+    animation: intro-gradient 10s infinite ease both;
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-animation: intro-gradient 10s infinite ease both;
+    -moz-animation: intro-gradient 10s infinite ease both;
+    animation: intro-gradient 10s infinite ease both;
+    line-height: 1.1;
+    letter-spacing: -.045em;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Intento de menu responsive */
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li a{
+    display: block;   
+}
+
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: #252525;
+    border-radius: 10px;
+}
+
+@media (max-width: 525px){
+    .toggle-button{
+        display: flex;
+    }
+
+    .navbar-links{
+        display: none;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        background-color: #dddddd;
+        top: 0;
+        margin-top: 45px;
+        padding: 60px auto;
+        z-index: 100;
+        align-items: center;
+    }
+
+    .nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo{
+        padding: 0px 10px;
+    }
+
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li{
+        text-align: center;
+        padding: 10px;
+        font-size: 2em;
+    }
+
+    .navbar-links.active{
+        display: flex;
+    }
+
+    .banner{
+        font-size: .85em;
+    }
+
+}
+
+/* Main */
+.banner{
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-tittle{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.tittle{
+    background-image: linear-gradient(
+    91.36deg, #6aa9e498 0%, #7aa4f3b4 13.02%, #6dc7ee 25.52%, #6dc7ee 37.5%, #caeaf8 49.48%, #77c8eb 63.02%, #7aa4f3b4 72.92%, #90b2f3b4 84.38%, #90b2f3b4 97.92%);
+    animation: intro-gradient 10s infinite ease both;
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-animation: intro-gradient 10s infinite ease both;
+    -moz-animation: intro-gradient 10s infinite ease both;
+    animation: intro-gradient 10s infinite ease both;
+    line-height: 1.1;
+    letter-spacing: -.045em;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5em;
+}
+
+.subtittle{
+    font-size: 1.5em;
+    opacity: .65;
+    font-weight: 400;
+}
+
+.container-buttom{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 50px 0px;
+}
+
+.main-buttom{
+    color: #7aa4f3;
+    padding: 3px 10px;
+    letter-spacing: -.025em;
+    font-size: .97em;
+}
+
+.container-profile{
+    padding: 30px;
+}
+
+.picture-border{
+    border-radius: 50%;
+    padding:8px;
+    background-image: linear-gradient(
+    91.36deg, #6aa9e498 0%, #cab6e27c 13.02%, #caeaf8 25.52%, #6dc7ee 37.5%, #caeaf8 49.48%, #77c8eb 63.02%, #7aa4f3b4 72.92%, #caeaf8 84.38%, #caeaf8 97.92%);
+    animation: intro-gradient 10s infinite ease both;
+    background-size: 200% 200%;
+    max-width: 500px;
+}
+
+@keyframes intro-gradient {
+    0% {
+        background-position: 0% 4%;
+    }
+    
+    50% {
+        background-position: 100% 97%;
+    }
+    100% {
+        background-position: 0% 4%;
+    }
+}
+
+.fernando-image{
+    width: 100%;
+    height: auto;
+    max-height: auto;
+    border-radius: 50%;
+    max-width: 350px;
+    opacity: .85;
+}
+
+/* Footer */
+
+.footer{
+    border-top: 1px solid #2525256e;
+    padding: 50px 0px 5px 0px;
+}
+
+.footer-section-top{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.text-footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-tittle{
+    color: #252525;
+    opacity: .90;
+    padding: 3px 10px;
+    font-weight: 600;
+    letter-spacing: -.025em;
+    font-size: .97em;
+}
+
+.footer-link{
+    color: #252525;
+    padding: 3px 10px;
+    letter-spacing: -.025em;
+    font-size: .85em;
+    opacity: .70;
+    font-weight: 500;
+}
+
+.footer-section-bottom{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2em;
+}
+
+.copy-text{
+    font-size: .35em;
+}
