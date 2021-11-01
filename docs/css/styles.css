@@ -140,7 +140,7 @@ a{
         background-color: #dddddd;
         top: 0;
         margin-top: 45px;
-        padding: 60px auto;
+        padding: 50px auto;
         z-index: 100;
         align-items: center;
     }
@@ -263,7 +263,7 @@ a{
     height: auto;
     max-height: auto;
     border-radius: 50%;
-    max-width: 350px;
+    max-width: 290px;
     opacity: .85;
 }
 
