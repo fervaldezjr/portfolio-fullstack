@@ -177,19 +177,17 @@ a{
     }
 
     .fernando-image{
-        height: 190px;
         width: 190px;
     }
 }
 
 /* Main */
 .banner{
-    padding: 8em 0px;
+    padding: 3em 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
 }
 
 .container-tittle{
