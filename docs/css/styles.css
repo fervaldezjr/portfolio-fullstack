@@ -363,15 +363,14 @@ main{
     font-weight: 600;
     font-size: 1.2em;
     opacity: .75;
+    padding-bottom: 1em;
 }
 
 /* Grid, Tech */
 .grid-tech {
     grid-column: 2 / 3;
-    background-image: linear-gradient(
-        91.36deg, #6aa9e498 0%, #7aa4f3b4 13.02%, #6dc7ee 25.52%, #6dc7ee 37.5%, #caeaf8 49.48%, #77c8eb 63.02%, #7aa4f3b4 72.92%, #90b2f3b4 84.38%, #90b2f3b4 97.92%);
-    animation: intro-gradient 10s infinite ease both;
-    background-size: 200% 200%;
+    background: linear-gradient(70deg, #90b2f3b4, #77c8eb);
+
 }
 
 .tech-icons{
@@ -384,7 +383,7 @@ main{
 
 .tech-images {
     width: 100%;
-    max-width: 125px;
+    max-width: 90px;
     filter: grayscale(0);
 }
 
