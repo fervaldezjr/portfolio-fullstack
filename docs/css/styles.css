@@ -136,6 +136,7 @@ main{
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-bottom: 3em;
 }
 
 .tittle{
@@ -180,7 +181,7 @@ main{
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    padding: 20px 0px;
+    padding: 1em 0px;
 }
 
 .main-buttom{
@@ -392,6 +393,127 @@ main{
     transition: 0.8s;
 }
 
+/* Projects, Page */
+.projects-video {
+    width: 100%;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+.projects-grid-style{
+    background-color: #2e2d2d;
+    padding: 0em;
+    border-radius: 1.1em;
+    text-align: left;
+    align-items: center;
+}
+
+.projects-text-container{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-name{
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
+.project-subtittle{
+    padding-top: 1em;
+    font-size: 1.2em;
+}
+
+.project-description{
+    font-size: 1.2em;
+    font-weight: 500;
+    opacity: .75;
+}
+
+.button-projects-container{
+    padding: 1.2em 0;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.button-projects{
+    color: #6599fb;
+    
+}
+
+.projects-grid {
+    display: grid;
+    gap: 0.5em;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50%;
+    letter-spacing: -.015em;
+    line-height: 1.3;
+}
+
+/* Grid, Pomodoro nº1*/
+.project-pomodoro {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+}
+
+/* Grid, Joppy nº2 */
+.project-joppy {
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+}
+
+/* Gird, Blog nº3 */
+.project-blog {
+    grid-column: 3 / 3;
+    grid-row: 1 / 1;
+}
+
+/* Grid, Enterprise nº4 */
+.project-enterprise {
+    grid-column: 1 / 1;
+    grid-row: 2 / 3;
+}
+
+/* Grid, Company nº5*/
+.project-enterprise {
+    grid-column: 2 / 2;
+    grid-row: 2 / 3;
+}
+
+
+/*  Contact - grids  */
+
+.contact-images{
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 1em;
+}
+
+.contact-icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-grid{
+    background-color: #00c3a3;
+}
+
+.contact-buttom{
+    padding: 5px 10px;
+    letter-spacing: -.025em;
+    font-size: .95em;
+    font-weight: 600;
+    border-radius: .60em;
+    color: #ffffff;
+}
+
+.contact-buttom:hover{
+    background-color: palevioletred;
+}
+
 @media (max-width: 769px) {
     .container{
         margin: 0px 50px;
@@ -423,6 +545,45 @@ main{
         filter:grayscale(0);
         
     }
+
+    .projects-grid {
+        display: grid;
+        gap: 0.5em;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        letter-spacing: -.015em;
+        line-height: 1.3;
+    }
+    
+    /* Grid, Pomodoro nº1*/
+    .project-pomodoro {
+        grid-column: 1 / 4;
+        grid-row: 1 / 1;
+    }
+    
+    /* Grid, Joppy nº2 */
+    .project-joppy {
+        grid-column: 1 / 4;
+        grid-row: 2 / 2;
+    }
+    
+    /* Gird, Blog nº3 */
+    .project-blog {
+        grid-column: 1 / 4;
+        grid-row: 3 / 3;
+    }
+    
+    /* Grid, Enterprise nº4 */
+    .project-company {
+        grid-column: 1 / 4;
+        grid-row: 4 / 4;
+    }
+    
+    /* Grid, Company nº5*/
+    .project-enterprise {
+        grid-column: 1 / 4;
+        grid-row: 5 / 5;
+    }
 }
 
 @media (min-width: 1024px){
@@ -432,6 +593,10 @@ main{
 
     .main{
         height: 100vh;
+    }
+
+    .tech-images{
+        max-width: 103px;
     }
 }
 
@@ -507,40 +672,4 @@ main{
         max-width: 100px;
         filter: grayscale(0);
     }
-}
-
-/* Projects, Page */
-
-
-
-/*  Contact - grids  */
-
-.contact-images{
-    width: 100%;
-    max-width: 200px;
-    margin-bottom: 1em;
-}
-
-.contact-icons{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact-grid{
-    background-color: #00c3a3;
-}
-
-.contact-buttom{
-    padding: 5px 10px;
-    letter-spacing: -.025em;
-    font-size: .95em;
-    font-weight: 600;
-    border-radius: .60em;
-    color: #ffffff;
-}
-
-.contact-buttom:hover{
-    background-color: palevioletred;
 }
