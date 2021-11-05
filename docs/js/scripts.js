@@ -1,3 +1,4 @@
+ScrollReveal().reveal('.footer-show', { delay: 200 });
 ScrollReveal().reveal('.primero', { delay: 400 });
 ScrollReveal().reveal('.segundo', { delay: 500 });
 ScrollReveal().reveal('.tercero', { delay: 600 });
