@@ -59,7 +59,9 @@ a{
 
 .nav-link:hover,
 .main-buttom:hover,
-.footer-link:hover{
+.footer-link:hover,
+.swiper-button-p:hover,
+.cancel:hover{
     background-color: #757575;
     border-radius: .30em;
     transition: 0.5s;
@@ -512,6 +514,117 @@ main{
 
 .contact-buttom:hover{
     background-color: palevioletred;
+}
+
+/* Request, Swipper */
+
+.container-request {
+    padding: 5em;
+    background-color: #1d1c1c;
+}
+
+.swiper {
+    width: 100%;
+    height: 80vh;
+}
+
+.swiper-slide {
+    text-align: center;
+    background: #000000;
+    border-radius: 1.1em;
+    color: #ffffff;
+    margin: 1px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+/* Request Cancel */
+.request-cancel {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    letter-spacing: -.015em;
+    line-height: 1.3;
+    font-size: 1em;
+}
+
+.swiper-button-p {
+    cursor: pointer;
+    padding: 5px 10px;
+    font-weight: 600;
+}
+
+.back-first {
+    color: #555555;
+    font-weight: 600;
+}
+
+.cancel {
+    color: rgb(194, 31, 31);
+    cursor: pointer;
+    padding: 5px 10px;
+    font-weight: 600;
+}
+
+/* Request, Title */
+.request-text {
+    letter-spacing: -.015em;
+    line-height: 1.3;
+    margin: 5.5em 0;
+}
+
+.request-tittle {
+    font-size: 1em;
+    color: #757575;
+}
+
+.request-subtittle {
+    font-size: 2em;
+}
+
+/* Request , Form */
+.form-content {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    background: #1d1c1c;
+    padding: 1em;
+    margin: .80em;
+    border-radius: 1.1em;
+    border: solid #757575 1px;
+    cursor: pointer;
+}
+
+label {
+    font-size: 1em;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+}
+
+/* Request, next */
+.next-button {
+    margin: 10em 0 2em 0;
+}
+
+.swiper-button-n {
+    padding: 10px 15px;
+    background-color: #397cfa;
+    border-radius: .60em;
+    cursor: pointer;
 }
 
 @media (max-width: 769px) {

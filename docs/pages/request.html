@@ -9,10 +9,13 @@
     <!-- Styles -->
     <link rel="stylesheet" href="../css/styles.css">
 
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
     <!-- Font Awesome-->
     <script src="https://kit.fontawesome.com/77408c3814.js" crossorigin="anonymous"></script>
 
-    <!--SCROLL REVEAL LIBRARY-->
+    <!--Scroll Reveal Library-->
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
@@ -42,24 +45,115 @@
         </div>
     </header>
 
-    <section class="about-hero">
-        <div class="background-about-hero">
-            <div class="container">
-                <div class="about-text segundo">
-                    <h1 class="about-tittle">Projects.</h1>
-                    <h2 class="about-description">A small selection of my works <br> and co-works.</h2>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!--Swipper-->
+    <div class="container-request">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
 
-    <section class="about-content">
-        <div class="container">
-            <div class="about-grid">
+                <!-- Services Slide-->
+                <div class="swiper-slide">
+                    <div class="content">
+                        <div class="request-cancel">
+                            <a class="swiper-button-p back-first">< Back</a>
+                            <a href="../index.html" class="cancel">Cancel</a>
+                        </div>
+                        <div class="request-text">
+                            <h1 class="request-tittle">Services</h1>
+                            <h2 class="request-subtittle">Which services do you need?</h2>
+                        </div>
+                    <form>
+                        <div class="form-content">
+                            <label for="webdev">Web Development</label>
+                            <input type="checkbox" id="webdev" name="services" value="webdev">
+                        </div>
+                        <div class="form-content">
+                            <label for="landing">Lading Page</label>
+                            <input type="checkbox" id="landing" name="services" value="landing">
+                        </div>
+                        <div class="form-content">
+                            <label for="other">Other</label>
+                            <input type="checkbox" id="other" name="services" value="other">
+                        </div>
+
+                        <div class="next-button">
+                            <a class="swiper-button-n">Next</a>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+
+                <!--Two Slide-->
+                <div class="swiper-slide">
+                    <div class="content">
+                        <div class="request-cancel">
+                            <a class="swiper-button-p">< Back</a>
+                            <a href="../index.html" class="cancel">Cancel</a>
+                        </div>
+                        <div class="request-text">
+                            <h1 class="request-tittle">Services</h1>
+                            <h2 class="request-subtittle">Which services do you need?</h2>
+                        </div>
+                        <form>
+                            <div class="form-content">
+                                <label for="webdev">Web Development</label>
+                                <input type="checkbox" id="webdev" name="services" value="webdev">
+                            </div>
+                            <div class="form-content">
+                                <label for="landing">Lading Page</label>
+                                <input type="checkbox" id="landing" name="services" value="landing">
+                            </div>
+                            <div class="form-content">
+                                <label for="other">Other</label>
+                                <input type="checkbox" id="other" name="services" value="other">
+                            </div>
+        
+                            <div class="next-button">
+                                <a class="swiper-button-n">Next</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
                 
+                <!--Three Slide-->
+                <div class="swiper-slide">
+                    <div class="content">
+                        <div class="request-cancel">
+                            <a class="swiper-button-p">< Back</a>
+                            <a href="../index.html" class="cancel">Cancel</a>
+                        </div>
+                        <div class="request-text">
+                            <h1 class="request-tittle">Services</h1>
+                            <h2 class="request-subtittle">Which services do you need?</h2>
+                        </div>
+                        <form>
+                            <div class="form-content">
+                                <label for="webdev">Web Development</label>
+                                <input type="checkbox" id="webdev" name="services" value="webdev">
+                            </div>
+                            <div class="form-content">
+                                <label for="landing">Lading Page</label>
+                                <input type="checkbox" id="landing" name="services" value="landing">
+                            </div>
+                            <div class="form-content">
+                                <label for="other">Other</label>
+                                <input type="checkbox" id="other" name="services" value="other">
+                            </div>
+        
+                            <div class="next-button">
+                                <a class="swiper-button-n">Next</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+
             </div>
         </div>
-    </section>
+    </div>
+
+    <div class="swiper-pagination">
+    </div>
 
     <!--Footer-->
     <footer class="footer footer-show">
@@ -98,8 +192,27 @@
         </div>
     </footer>
 
-    <!--SCROLL REVEAL LIBRARY-->
+    <!--Scroll Reveal Library-->
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+        pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar"
+        },
+        navigation: {
+        nextEl: ".swiper-button-n",
+        prevEl: ".swiper-button-p"
+        }
+        });
+        </script>
+
+    <!--Other Scripts-->
     <script src="../js/scripts.js"></script>
     <script src="../js/menu.js"></script>
 </body>
