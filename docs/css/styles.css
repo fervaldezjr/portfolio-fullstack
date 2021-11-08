@@ -519,7 +519,7 @@ main{
 /* Request, Swipper */
 
 .container-request {
-    padding: 5em;
+    padding: 2.5em;
     background-color: #1d1c1c;
 }
 
@@ -582,7 +582,7 @@ main{
 .request-text {
     letter-spacing: -.015em;
     line-height: 1.3;
-    margin: 5.5em 0;
+    margin: 2em 0;
 }
 
 .request-tittle {
