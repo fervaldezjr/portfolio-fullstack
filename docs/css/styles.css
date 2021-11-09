@@ -586,7 +586,7 @@ form{
     justify-content: center;
     flex-direction: column;
     color: #fff;
-    padding: 2em 0;
+    padding: 0em 0;
 }
 
 .request-text {
@@ -611,7 +611,7 @@ form{
     align-items: center;
     background: #1d1c1c;
     padding: 1em;
-    margin: .80em;
+    margin: .50em;
     border-radius: 1.1em;
     border: solid #757575 1px;
     cursor: pointer;
@@ -625,7 +625,6 @@ label {
     font-size: 1.5em;
     cursor: pointer;
     width: 100%;
-
     text-align: left;
 }
 
@@ -636,10 +635,8 @@ label {
     align-content: flex-end;
     padding: 2em;
     border-top: 1px solid #75757577;
-    position: absolute;
     width: 100%;
-    bottom: 2em;
-    left: 0;
+    margin-top: 1.7em;
 }
 
 .swiper-button-n {
